@@ -1,0 +1,12 @@
+# StayMind AI — clean root-layout Next.js project
+# Keep this file next to package.json in the repository root.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# The Next.js adapter is automatically provided by Netlify; do not pin it.
+# Do not add SPA redirects because this project serves /api/draft on the server.
+# Set ANTHROPIC_API_KEY securely in the Netlify project's environment variables.
